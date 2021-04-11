@@ -22,6 +22,7 @@ import org.me.gcu.equakestartercode.R;
 
 /**
  * @author Ted Hilton - S1708998
+ *
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 

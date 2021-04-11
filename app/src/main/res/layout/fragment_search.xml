@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:freezesText="true"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView android:id="@+id/searchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search between two dates to find information on earthquakes:"
+            android:textSize="30sp"/>
+
+        <TextView android:id="@+id/fromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:layout_marginTop="110dp"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:freezesText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="From Date"
+            android:layout_marginTop="140dp"
+            android:textSize="30sp"/>
+
+        <TextView android:id="@+id/toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:layout_marginTop="180dp"
+            android:textSize="30sp"/>
+
+        <TextView android:id="@+id/toDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:hint="To Date"
+            android:layout_marginTop="210dp"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/getDatesButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:text="Search" />
+
+        <ListView
+            android:id="@+id/earthquakeInfoList"
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:layout_below="@+id/getDatesButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"></ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
